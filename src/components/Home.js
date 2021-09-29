@@ -4,14 +4,13 @@ import mainBackground from '../images/MainBackground_jess-unleashed.jpg'
 import '../styles/home.css'
 
 function Home() {
-    const inline = {
-        backgroundImage:"url(" + {mainBackground} + ") no-repeat center center fixed",
-        backgroundSize: "cover"
-    }
+
 
     return (
-        <div style={inline}>
-            
+        <div className="home-ctn">
+            <img className="background-img" src={mainBackground}/>
+            <h1 className="home-title">PEACHTREE CYCLERY</h1>
+            <h3>DISTRIBUTOR OF BIKES AND MORE... CHECK US OUT.</h3>
         </div>
     )
 }

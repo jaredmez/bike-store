@@ -3,12 +3,14 @@ header {
     background-color: black;
     padding: 10px;
     justify-content: center;
+    position:relative;
+    z-index:3;
 }
 
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -38,6 +40,23 @@ header {
     margin-right: 2.5em;
 }
 
+#search {
+    font-size: 14px;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    height: 25px;
+    width: 400px;
+    background: transparent; 
+    border-bottom: solid 1px #4AC0E0;
+    padding-right: 35px;
+    /* 
+    padding: 5px 10px 5px 0px;
+    */
+}
+
 #search-icon {
     width: 25px;
+    position: relative;
+    left: -30px;
 }
