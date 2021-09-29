@@ -8,13 +8,17 @@ function Header() {
         <header>
         <div className="main-nav">
             <div className="bike-logo-bttn">
-                <img src={bikeIcon} alt="bike-icon" />
+                <a href="/">
+                    <img src={bikeIcon} alt="bike-icon" />
+                </a>
             </div>
             <div className="search-ctn">
                 <input id="search" type="text" />
                 <img id="search-icon" src={search} alt="search-icon"/>
             </div>
-            <div className="shop-bttn">SHOP</div>
+            <a href="/shop">
+                <div className="shop-bttn">SHOP</div>
+            </a>
         </div>
 
       </header>

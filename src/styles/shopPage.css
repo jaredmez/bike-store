@@ -4,14 +4,25 @@
     padding: 15px 30px;
 }
 
+a {
+    text-decoration: none;
+}
 
 .product-card-ctn {
     border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
 }
 
 .product-card {
-    max-width: 400px;   
+    flex: 1;
+    flex-basis: 300px;
+    max-width: 300px;   
     padding: 10px;
     border: .5px solid black;
 }
