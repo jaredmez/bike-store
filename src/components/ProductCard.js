@@ -1,10 +1,9 @@
 import React from "react";
 
 function ProductCard(props) {
-    console.log(props)
-    const {name, price, picture} = props.data;
+    const {name, price, picture, id} = props.data;
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={() => props.onClick(id)}>
             <img src={picture} alt="" />
             <h4>{name}</h4>
             <p>{`$ ${price}`}</p>

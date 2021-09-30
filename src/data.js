@@ -32,7 +32,7 @@ let data = [
         name: "Trek Domane 2",
         price: 999.99,
         type: "bike",
-        picture: "https://trek.scene7.com/is/image/TrekBicycleProducts/Roscoe7_22_35116_B_Primary?$responsive-pjpg$&cache=on,on&wid=1440&hei=1080"
+        picture: "https://trek.scene7.com/is/image/TrekBicycleProducts/DomaneAL2_21_33037_A_Primary?$responsive-pjpg$&cache=on,on&wid=1200&hei=900"
     },
     {
         id: 6,
