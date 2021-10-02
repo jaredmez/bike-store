@@ -8,7 +8,7 @@ function Home() {
 
     return (
         <div className="home-ctn">
-            <img className="background-img" src={mainBackground}/>
+            <img className="background-img" src={mainBackground} alt="person-on-bike"/>
             <h1 className="home-title">PEACHTREE CYCLERY</h1>
             <h3>DISTRIBUTOR OF BIKES AND MORE... CHECK US OUT.</h3>
         </div>
