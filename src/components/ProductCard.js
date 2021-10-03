@@ -6,8 +6,10 @@ function ProductCard(props) {
     return (
         <div className="product-card">
             <img src={picture} alt="" />
-            <h4>{name}</h4>
-            <p>{`$ ${price}`}</p>
+            <div className="product-card-detail">
+                <h4>{name}</h4>
+                <p>{`$ ${price}`}</p>
+            </div>
         </div>
     )
 }

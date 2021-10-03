@@ -9,21 +9,18 @@ import {Switch, Route, Link, useRouteMatch} from "react-router-dom"
 
 
 
-function ShopPage() {
+function ShopPage(props) {
     // const [showItem, setShowItem] = useState(false)
     // const [itemToShowId, setItemToShowId] = useState();
     let {path, url} = useRouteMatch();
 
-    // const togglePage = (itemId) => {
-    //     setShowItem(true);
-    //     setItemToShowId(itemId);
-    //     console.log(`need to toggle item# ${itemId}`)
-    // }
-
-
     return (
         <div className="shop-page-ctn">
-            <h1>SHOPPING PAGE</h1>
+            <div className="shop-header">
+                <h1>SHOPPING PAGE</h1>
+
+            </div>
+
             <div className="shop-page-content">
                 {/* <FilterBar /> */}
                 <div className="product-card-ctn">
@@ -37,7 +34,7 @@ function ShopPage() {
                         )}
                     </Route>
                     <Route path={`${path}/:itemId`}>
-                        <ProductPage productData={data} />
+                        <ProductPage productData={data} addItem={props.addItem}/>
                     </Route>
                 </Switch>
 

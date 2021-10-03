@@ -1,17 +1,39 @@
-import './styles/App.css';
+import './styles/App.css'
 import Header from './components/Header'
 import Home from './components/Home'
 import ShopPage from './components/ShopPage'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React, {useState} from 'react'
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addItemToCart = (productData) => {
+    if(cart.find(itm => itm.id === productData.id)) {
+      const newCart = [...cart];
+      setCart(newCart.map(itm => {
+        if(itm.id === productData.id) {
+          return {...itm, qty: itm.qty + 1};
+        }
+        return itm;
+        }))
+    }else {
+      const cartItem = {...productData, qty: 1};
+      setCart([...cart, cartItem]);
+    }
+   
+  }
+  
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header cart={cart} />
+      
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/shop" component={ShopPage}/>
+          <Route path="/shop">
+            <ShopPage addItem={addItemToCart} />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

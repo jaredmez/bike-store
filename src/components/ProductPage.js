@@ -19,7 +19,7 @@ function ProductPage(props) {
                     <input type="number" min="1" max="4"/>
                     <button>+</button>
                 </div>
-                <div className="add-to-cart">Add to Cart</div>
+                <div className="add-to-cart" onClick={()=>props.addItem(itemData)}>Add to Cart</div>
             </div>
             
         </div>
