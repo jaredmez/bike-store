@@ -17,7 +17,6 @@ function ShopPage(props) {
     return (
         <div className="shop-page-ctn">
             <div className="shop-header">
-                <h1>SHOPPING PAGE</h1>
 
             </div>
 

@@ -1,8 +1,8 @@
 
 .shop-page-content {
-    border: 1px solid black;
     display: flex;
     padding: 15px 30px;
+    margin: 30px 0px 250px 0px;
 }
 
 a {
@@ -10,14 +10,19 @@ a {
 }
 
 .product-card-ctn {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1500px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 
+}
+
+.product-card-ctn > * {
+    flex: 1;
+    min-width: 250px;
+    max-width: 275px;
 }
 
 .product-card-ctn a {
