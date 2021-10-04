@@ -8,17 +8,17 @@ import React, {useState} from 'react'
 function App() {
   const [cart, setCart] = useState([]);
 
-  const addItemToCart = (productData) => {
+  const addItemToCart = (productData, qtyCnt) => {
     if(cart.find(itm => itm.id === productData.id)) {
       const newCart = [...cart];
       setCart(newCart.map(itm => {
         if(itm.id === productData.id) {
-          return {...itm, qty: itm.qty + 1};
+          return {...itm, qty: itm.qty + qtyCnt};
         }
         return itm;
         }))
     }else {
-      const cartItem = {...productData, qty: 1};
+      const cartItem = {...productData, qty: qtyCnt};
       setCart([...cart, cartItem]);
     }
    

@@ -1,3 +1,4 @@
+
 .product-page {
     padding: 20px;
     display: flex;
@@ -33,16 +34,21 @@
 
 .qty-selector-ctn {
     margin: 10px;
-    padding: 10px;
     display: flex;
+    border: .5px solid grey;
+    height: 30px;
+    border-radius: 2px;
 }
 
-.qty-selector-ctn input {
-    width: 75px;
-    margin: 0 2px;
+.qty-selector-ctn span {
+    width: 45px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    height: 30px;
+
 }
 .qty-selector-ctn button {
-    background-color: grey ;
     border: transparent;
     width: 30px;
     height: 25px;
