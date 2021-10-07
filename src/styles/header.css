@@ -147,3 +147,35 @@ header {
 .cart-drawer-item p {
     font-weight: bold;
 }
+
+@media screen and (max-width: 1100px) {
+    #search,
+    #search-icon {
+        display: none;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+
+    .bike-logo-bttn {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #search,
+    #search-icon {
+        display: none;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+
+    .cart-logo-bttn {
+        margin-left: 0px;
+    }
+}

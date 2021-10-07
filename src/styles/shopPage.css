@@ -70,3 +70,19 @@ a {
     border: 1px solid green;
 }
 
+@media screen and (max-width: 350px) {
+    .product-card-ctn > * {
+        flex: 1;
+        min-width: 150px;
+        max-width: 275px;
+    }
+
+    .shop-page-content {
+        padding: 0;
+        margin: 0px;
+    }
+
+    .product-card {
+        height: auto;
+    }
+}
