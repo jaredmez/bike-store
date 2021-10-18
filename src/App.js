@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header cart={cart} />
 
         <Switch>
@@ -36,7 +36,7 @@ function App() {
             <ShopPage addItem={addItemToCart} />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
