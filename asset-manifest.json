@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bike-store/static/css/main.bb0c9e98.chunk.css",
+    "main.js": "/bike-store/static/js/main.bedbbd11.chunk.js",
+    "main.js.map": "/bike-store/static/js/main.bedbbd11.chunk.js.map",
+    "runtime-main.js": "/bike-store/static/js/runtime-main.5bff0afc.js",
+    "runtime-main.js.map": "/bike-store/static/js/runtime-main.5bff0afc.js.map",
+    "static/js/2.60a9fa1d.chunk.js": "/bike-store/static/js/2.60a9fa1d.chunk.js",
+    "static/js/2.60a9fa1d.chunk.js.map": "/bike-store/static/js/2.60a9fa1d.chunk.js.map",
+    "index.html": "/bike-store/index.html",
+    "static/css/main.bb0c9e98.chunk.css.map": "/bike-store/static/css/main.bb0c9e98.chunk.css.map",
+    "static/js/2.60a9fa1d.chunk.js.LICENSE.txt": "/bike-store/static/js/2.60a9fa1d.chunk.js.LICENSE.txt",
+    "static/media/MainBackground_jess-unleashed.63c5f649.jpg": "/bike-store/static/media/MainBackground_jess-unleashed.63c5f649.jpg",
+    "static/media/bike_icon_yellow.24fc5c89.png": "/bike-store/static/media/bike_icon_yellow.24fc5c89.png",
+    "static/media/cart-blue.279f8c49.png": "/bike-store/static/media/cart-blue.279f8c49.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bff0afc.js",
+    "static/js/2.60a9fa1d.chunk.js",
+    "static/css/main.bb0c9e98.chunk.css",
+    "static/js/main.bedbbd11.chunk.js"
+  ]
+}
